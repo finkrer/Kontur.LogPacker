@@ -49,7 +49,7 @@ namespace Kontur.LogPacker.SelfCheck
                     Directory.CreateDirectory(TemporaryDirectoryPath);
                     try
                     {
-                        File.Copy("example.log", UncompressedFile);
+	                    File.Copy("example.log", UncompressedFile);
                         GetType().GetMethod(test, BindingFlags.Instance | BindingFlags.NonPublic).Invoke(this, null);
                     }
                     finally
